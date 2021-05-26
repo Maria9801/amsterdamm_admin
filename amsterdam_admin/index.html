@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Tyre" content="index/html; charset=UTF-8">
+    <meta http-equiv="Content-Tyre" content="praice/html; charset=UTF-8">
+    <title>Админ панель АмстердамМ</title>
+    <link rel="stylesheet"  href="css/style.css">
+</head>
+<body>
+    <header id="header" class="header">
+		<div class="container">
+			<div class="nav">
+				<a href="index.html"><img class="logo" src="ico/logo_.svg" alt="AmsterdamM"></a>	
+				<ul class="menu">
+					<li> 
+						<a href="index.html#index" >Сотрудники</a>
+					</li>
+					<li> 
+						<a href="praice.html#praie" >Прайс-лист</a>
+					</li>
+					<li> 
+						<a href="#" >Выход</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+<!------------------------------------------------------------------------>	
+<div class="form">
+    <div class="form_top">
+        <p>Добавить нового сотрудника</p>
+            <label for="form_date" class="form_label">Имя сотрудника</label>
+            <input id="form_name" type="text" name="name" class="form_input _req"> <!-- HTML5 -->  
+        <div class="form_top_p">
+            <div class="form_label">Должность:</div>
+                <!-- <select id='select_usluga' class="select" mame="master" onchange="selectedUsluga(this.value)"> -->
+                <select id='select_post' class="select_post"  mame="post">
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                </select>
+            </div>
+               <button type="submit" class="form_button" onclick="putDataForm()">Добавить</button>
+    </div>        
+<!------------------------------------------------------------------------>	
+        <div class="form_lower">
+            <p>Удалить сотрудника</p>
+                <div class="form_label">Выберите сотрудника:</div>
+                <!-- <select id='select_usluga' class="select" mame="master" onchange="selectedUsluga(this.value)"> -->
+                <select id='select_master' class="select_master"  mame="master">
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                </select>
+            <div class="form_lower_p">
+                <div class="form_label">Должность:</div>
+                        <!-- <select id='select_usluga' class="select" mame="master" onchange="selectedUsluga(this.value)"> -->
+                        <select id='select_post' class="select_post"  mame="post">
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                        </select>
+                    </div>
+                     <button type="submit" class="form_button" onclick="putDataForm()">Удалить</button> <!---->
+        </div>	
+</div>    
+<script src="js/main.js"> </script>  
+</body>
+</html>
